@@ -17,6 +17,7 @@ public class Conditionnelle1 {
 				p4 = p2;
 		}
 
+		System.out.println(p4);
 	}
 
 }
