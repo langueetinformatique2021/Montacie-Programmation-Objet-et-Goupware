@@ -34,5 +34,23 @@ public class Carafe {
 		contenu_ = 0;
 	}
 	
+	/** contenu d'une carafe 
+	 * @return contenu en litres */
+	public int Contenu() {
+		return contenu_;
+	}
+	
+	/** capacite d'une carafe 
+	 * @return capacite en litres */
+	public int Capacie() {
+		return capacite_;
+	}
+	
+	/** transvaser une carafe dans une autre carafe
+	 * @param autreC l'autre carafe */
+	public void Transvaser(Carafe autreC) {
+		
+	}
+	
 
 }
