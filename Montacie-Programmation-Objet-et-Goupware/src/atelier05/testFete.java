@@ -7,6 +7,12 @@ public class testFete {
 		Date today = new Date(28,10,2021);
 		Date fete = new Date(14,7,2022);
 		
+		// on incrémente today tant que cette date n'est pas égale à fete
+		
+		today.Incrementer();
+		
+		today.CompareTo(fete);
+		
 
 	}
 
