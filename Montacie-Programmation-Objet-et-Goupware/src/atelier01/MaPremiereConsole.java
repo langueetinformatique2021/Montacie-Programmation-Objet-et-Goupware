@@ -8,7 +8,7 @@ public class MaPremiereConsole {
 		
 		Console c = new Console();
 		c.println("Claude");
-		c.println("Montacié");
+		c.println("Montacie");
 		
 	}
 

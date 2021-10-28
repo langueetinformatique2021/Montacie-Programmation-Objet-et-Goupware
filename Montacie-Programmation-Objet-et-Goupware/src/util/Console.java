@@ -28,7 +28,7 @@ public class Console implements DocumentListener {
 		lect = false;
 	}
 
-	// méthodes d'écriture
+	// mï¿½thodes d'ï¿½criture
 	
 	public void print(String v) {
 		jl.append(v);
@@ -128,7 +128,7 @@ public class Console implements DocumentListener {
 		jl.append("\n");
 		jl.setCaretPosition(dl.getLength());
 	}
-	// méthodes de lecture 
+	// methodes de lecture 
 	private String[] lire(String mess) {
 		print(mess);
 		int d = dl.getLength();
@@ -181,7 +181,7 @@ public class Console implements DocumentListener {
 		return (Double.parseDouble(mots[0]));
 	}
 
-	// méthodes d'écoute
+	// methodes d'ecoute
 	public void insertUpdate(DocumentEvent arg0) {
 		if (lect == true) {
 			String s = null;
