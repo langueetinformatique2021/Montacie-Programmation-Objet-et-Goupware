@@ -16,5 +16,7 @@ String etat = (domestique) ? "domestique" : "sauvage";
 System.out.println("je suis vraiment un animal " + etat) ;
 }
 /** cri du félin */
-……………
+public void crie() {
+	System.out.println("Je crie donc je suis");
+}
 }
