@@ -1,17 +1,20 @@
 package atelier06;
 
 public class Chat extends Félin implements Domesticable {
-
-	@Override
-	public void domestiquer(String nom) {
-		// TODO Auto-generated method stub
-
+	String nom;
+	
+	public Chat() {
+		super("chat");
 	}
 
-	@Override
+	public void domestiquer(String nom) {
+		domestique = true;
+		this.nom = nom;
+	}
+
+
 	public String nom() {
-		// TODO Auto-generated method stub
-		return null;
+		return nom;
 	}
 
 }
