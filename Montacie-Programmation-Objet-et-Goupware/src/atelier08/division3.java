@@ -1,7 +1,10 @@
 package atelier08;
 
-public class division {
+public class division3 {
 	public static void main(String[] args) {
+		division();
+	}
+	public static void division() {
 			int i = 1000, j;
 			do {
 				i--;
