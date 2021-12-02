@@ -6,13 +6,16 @@ public class testE421 {
 		Des d1 = new Des();
 		Des d2 = new Des();
 		Des d3 = new Des();
+		int n = 0;
 		try {
-			while (true)
+			while (true) {
 				lancerDes421(d1, d2, d3);
+				n++;
+			}
 		}
 
 		catch (E421 e) {
-			System.out.println(e.getMessage());
+			System.out.println(e.getMessage() + " " + n);
 		}
 	}
 
