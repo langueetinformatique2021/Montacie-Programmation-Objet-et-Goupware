@@ -1,7 +1,7 @@
 package atelier08;
 
 public class Des {
-	Aleat des;
+	private Aleat des;
 	
 	public Des() {
 		des = new Aleat(6);
