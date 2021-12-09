@@ -3,6 +3,8 @@ package atelier09;
 import java.io.*;
 import java.util.*;
 
+import util.Keyboard;
+
 /**
  * Lecture des mots d'un fichier-texte
  * 
@@ -11,7 +13,7 @@ import java.util.*;
 public class LireTexte {
 	private String NomFichier;
 	private BufferedReader entrée;
-	private String ligne;
+	private String ligne, livre;
 	private StringTokenizer tok;
 
 	/**
@@ -20,6 +22,15 @@ public class LireTexte {
 	 * @param ft nom du fichier texte
 	 */
 	public LireTexte(String ft) {
+		NomFichier = ft;
+		try {
+			File f = new File(Keyboard.getString("Nom du fichier à lire : "));
+			FileReader fr = new FileReader(NomFichier);
+			entrée = new BufferedReader(fr);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	/**
