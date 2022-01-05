@@ -1,0 +1,24 @@
+package examen;
+public abstract class A {
+	char d[];
+	static int n;
+
+	A(char b, char c, int m) {
+		n = m;
+		d = new char[n];
+		for (int i = 0; i < n; i++) {
+			if ((i % 2) == 0)
+				d[i] = b;
+			else
+				d[i] = c;
+		}
+	}
+
+	abstract public void m1(int m);
+
+	public void m2(int m) {
+		for (int i = 0; i < n; i += m) {
+			System.out.println(d[i]);
+		}
+	}
+}
