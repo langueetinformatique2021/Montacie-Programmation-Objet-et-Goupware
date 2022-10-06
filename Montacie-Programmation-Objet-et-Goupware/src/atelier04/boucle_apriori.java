@@ -8,7 +8,7 @@ public class boucle_apriori {
 		int i1 = 0, i2 = s2.length() - 1;
 
 		
-		if (s1.length() == s1.length()) {
+		if (s1.length() == s2.length()) {
 			while ((i2 >= 0) && (s1.charAt(i1) == s2.charAt(i2))) {
 				i1++;
 				i2--;
