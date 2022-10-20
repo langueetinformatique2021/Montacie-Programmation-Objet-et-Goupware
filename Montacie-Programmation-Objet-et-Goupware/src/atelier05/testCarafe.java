@@ -9,7 +9,9 @@ public class testCarafe {
 		c1.remplir();
 		c2.vider();
 		
-
+		System.out.println(c1.contenu());
+		System.out.println(c2.capacite());
+	
 	}
 
 }
