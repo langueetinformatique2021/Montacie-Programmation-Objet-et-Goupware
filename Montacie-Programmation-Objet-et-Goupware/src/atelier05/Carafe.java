@@ -7,5 +7,13 @@ public class Carafe {
 		contenu_ = contenu;
 		capacite_ = capacite;
 	}
+	
+	public void vider() {
+		contenu_ = 0;
+	}
+	
+	public void remplir() {
+		contenu_ = capacite_;
+	}
 
 }
