@@ -9,7 +9,7 @@ public class Félin extends Animal {
 	 * le constructeur de Félins fait appel au constructeur de la sur-classe Animal
 	 */
 	public Félin(String type) { // les félins ont 4 pattes
-		...
+		super(type, 4);
 	}
 
 	/** présentation des caractéristiques du félin */
