@@ -11,6 +11,7 @@ public class testCalendar2 {
 		c.creation();
 		c.afficher();
 		c.duree();
+		
 	}
 
 }
