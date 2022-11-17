@@ -1,5 +1,6 @@
 package atelier07;
 
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 /** dérivée de Calendar implémentant un nouvel attribut cours 
@@ -8,8 +9,15 @@ public class Calendar2 extends GregorianCalendar {
 	
 	private boolean cours;
 	
+	public Calendar2() {
+		Date date = new Date();
+		this.setTime(date);	
+	}
+	
 	/** affiche la date et l’heure de la création de l’objet */
-	public void creation() {}
+	public void creation() {
+		System.out.println("TIME: " + this.getTime());
+	}
 	
 	/** affiche la date et l’heure courante */
 	public void afficher() {}
