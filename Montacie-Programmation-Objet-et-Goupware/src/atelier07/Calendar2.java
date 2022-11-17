@@ -28,7 +28,15 @@ public class Calendar2 extends GregorianCalendar {
 	}
 	
 	/** affiche le nombre de secondes depuis la création de l’objet */
-	public void duree() {}
+	public void duree() {
+		Date date = new Date();
+		GregorianCalendar calendar = new GregorianCalendar();
+		calendar.setTime(date);	
+		long nbSeconde = (calendar.getTimeInMillis()- this.getTimeInMillis()) / 1000;
+		System.out.println("nbSeconde " + nbSeconde);
+		
+		
+	}
 	
 	
 

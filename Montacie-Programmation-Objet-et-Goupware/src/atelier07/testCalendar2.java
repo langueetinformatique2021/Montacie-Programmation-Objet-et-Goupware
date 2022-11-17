@@ -10,7 +10,7 @@ public class testCalendar2 {
 		Keyboard.getInt("attente");
 		c.creation();
 		c.afficher();
-
+		c.duree();
 	}
 
 }
