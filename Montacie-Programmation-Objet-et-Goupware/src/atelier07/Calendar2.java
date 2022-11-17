@@ -20,7 +20,12 @@ public class Calendar2 extends GregorianCalendar {
 	}
 	
 	/** affiche la date et l’heure courante */
-	public void afficher() {}
+	public void afficher() {
+		Date date = new Date();
+		GregorianCalendar calendar = new GregorianCalendar();
+		calendar.setTime(date);	
+		System.out.println("TIME: " + calendar.getTime());
+	}
 	
 	/** affiche le nombre de secondes depuis la création de l’objet */
 	public void duree() {}
