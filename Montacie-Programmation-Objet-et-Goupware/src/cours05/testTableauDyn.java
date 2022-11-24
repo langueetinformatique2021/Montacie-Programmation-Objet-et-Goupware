@@ -9,7 +9,7 @@ public class testTableauDyn {
 		mot = phrase.get(0); System.out.println(mot);
 		phrase.puts(1, "livre");
 		mot = phrase.get(1); System.out.println(mot);
-		phrase.puts(2, "de");
+		phrase.puts(10, "de");
 		mot = phrase.get(2); System.out.println(mot);
 	}
 }
