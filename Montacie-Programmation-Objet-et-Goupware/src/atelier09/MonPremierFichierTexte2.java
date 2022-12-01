@@ -13,7 +13,7 @@ public class MonPremierFichierTexte2 {
 		try {
 			PrintWriter pr = new PrintWriter(
 					new File("Montacie-Programmation-Objet-et-Goupware/src/atelier09/Nom.txt"));
-			pr.println("Victoria Eyrabide");
+			pr.println("Victoria Eyhrabide");
 			pr.println("Claude Montacié");
 			pr.close();
 		} catch (IOException e) {
@@ -28,7 +28,7 @@ public class MonPremierFichierTexte2 {
 		try {
 			BufferedReader br = new BufferedReader(
 					new FileReader(new File("Montacie-Programmation-Objet-et-Goupware/src/atelier09/Nom.txt")));
-			if (br.readLine().equals("Victoria Eyrabide") == false)
+			if (br.readLine().equals("Victoria Eyhrabide") == false)
 				return false;
 			if (br.readLine().equals("Claude Montacié") == false)
 				return false;
