@@ -58,16 +58,16 @@ public class LireToutUnTexte {
 	 * @param s      chaîne cherchée
 	 * @param taille taille du contexte
 	 */
-	public static String ChercherVoir(String texte, String chaine, int Contexte_mots) {
+	public  String ChercherVoir(String chaine, int Contexte_mots) {
 		
 		String contexte;
-		if(texte.contains(chaine)) {
+		if(Stexte.contains(chaine)) {
 			
 			
-			int index_start = texte.indexOf(chaine) - (Contexte_mots) ;
-			int index_end = texte.indexOf(chaine) + (Contexte_mots + chaine.length());
+			int index_start = Stexte.indexOf(chaine) - (Contexte_mots) ;
+			int index_end = Stexte.indexOf(chaine) + (Contexte_mots + chaine.length());
 			
-			contexte = texte.substring(index_start,index_end);
+			contexte = Stexte.substring(index_start,index_end);
 		}
 		else {
 			
