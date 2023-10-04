@@ -13,8 +13,6 @@ public class A {
 	 * @param n entier
 	 * @return true si divisible par 13 (false sinon)
 	 */
-	public static boolean treize(int n) {
-		return ((n % 13) == 0);
-	}
+
 
 }
