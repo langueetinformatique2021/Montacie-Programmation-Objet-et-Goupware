@@ -8,6 +8,11 @@ package atelier05;
 
 public class Carafe {
 	private int contenu_, capacité_;
+	
+	public Carafe(int capacité) {
+		capacité_ = capacité;
+		contenu_ = 0;
+	}
 
 	public void Remplir() {
 
