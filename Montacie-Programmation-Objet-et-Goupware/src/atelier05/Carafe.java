@@ -35,6 +35,10 @@ public class Carafe {
 	}
 
 	public void Transvaser(Carafe c2) {
+		if ((c2.Capacité() - c2.Contenu()) == this.Contenu()) {
+			this.Vider();
+			c2.Remplir();
+		}
 
 	}
 
