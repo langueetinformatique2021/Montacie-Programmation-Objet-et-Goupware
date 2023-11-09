@@ -21,8 +21,8 @@ public class testCarafe {
 		c2.Vider();
 		System.out.println(c2.Contenu());
 		
-		
-		
+		c1.Transvaser(c2);
+
 
 	}
 

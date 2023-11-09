@@ -34,7 +34,7 @@ public class Carafe {
 
 	}
 
-	public void Transvaser() {
+	public void Transvaser(Carafe c2) {
 
 	}
 
