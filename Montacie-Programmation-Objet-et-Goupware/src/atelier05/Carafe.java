@@ -15,18 +15,22 @@ public class Carafe {
 	}
 
 	public void Remplir() {
+		contenu_ = capacité_;
 
 	}
 
 	public void Vider() {
+		contenu_ = 0;
 
 	}
 
-	public void Contenu() {
+	public int Contenu() {
+		return contenu_;
 
 	}
 
-	public void Capacité() {
+	public int Capacité() {
+		return capacité_;
 
 	}
 
