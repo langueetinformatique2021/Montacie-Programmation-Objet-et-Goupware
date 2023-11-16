@@ -1,5 +1,7 @@
 package atelier05;
 
+
+
 public class testCarafe {
 
 	public static void main(String[] args) {
@@ -13,17 +15,15 @@ public class testCarafe {
 		System.out.println(c2.Capacité());
 		System.out.println(c2.Contenu());
 		
-		c1.Remplir();
-		System.out.println(c1.Contenu());
 		
+		c1.Vider();
 		c2.Remplir();
-		System.out.println(c2.Contenu());
-		c2.Vider();
+		System.out.println(c1.Contenu());
 		System.out.println(c2.Contenu());
 		
-		c1.Transvaser(c2);
-
-
+		c2.Transvaser(c1);
+		System.out.println(c1.Contenu());
+		System.out.println(c2.Contenu());
 	}
 
 }

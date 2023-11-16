@@ -1,5 +1,7 @@
 package atelier05;
 
+import cours04.Date;
+
 public class testDate {
 
 	/** point d'entrée d'un exécutable */

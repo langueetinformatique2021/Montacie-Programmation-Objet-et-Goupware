@@ -1,5 +1,7 @@
 package atelier05;
 
+import cours04.Date;
+
 public class feteNationale {
 
 	public static void main(String[] args) {
