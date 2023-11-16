@@ -35,9 +35,22 @@ public class Carafe {
 	}
 
 	public void Transvaser(Carafe c2) {
-		if ((c2.Capacité() - c2.Contenu()) == this.Contenu()) {
-			this.Vider();
-			c2.Remplir();
+		int resteC2 = Capacité() - c2.Contenu();
+		// this.Contenu() > resteC2 on ne peut vider complétement this mais on remplit complétement c2
+		// this.Contenu() < resteC2 on vide complétement this mais on ne remplit pas complétement c2
+		
+		if (this.Contenu() > resteC2) {
+		}
+		else {
+		}
+			
+			// deux carafes this et c2 
+			// transvaser le contenu de this dans c2
+			// plusieurs cas
+			// c2 est déjà pleine ou this vide, on ne transvase rien
+			
+			
+			
 		}
 
 	}
