@@ -10,17 +10,27 @@ public class Carafe {
 		Vider();
 	}
 	
+	/** Remplir une carafe complétement */
 	public void Remplir() {
 		this.contenu_ = capacite_;
 	}
 	
+	/** Vider une carafe complétement */
 	public void Vider() {
 		this.contenu_ = 0;
 	}
 	
-	public void Contenu() {}
+	/** Accesseur en lecture  
+	 * @return contenu de la carafe en litres */
+	public int Contenu() {
+		return this.contenu_;
+	}
 	
-	public void Capacité() {}
+	/** Accesseur en lecture  
+	 * @return capacité de la carafe en litres */
+	public int Capacité() {
+		return this.capacite_;
+	}
 	
 	public void Transvaser() {}
 		
