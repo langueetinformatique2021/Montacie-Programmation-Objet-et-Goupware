@@ -7,12 +7,16 @@ public class Carafe {
 	 * @param capacite capacité en litres de la carafe */
 	public Carafe(int capacite) {
 		this.capacite_ = capacite;
-		this.contenu_ = 0;
+		Vider();
 	}
 	
-	public void Remplir() {}
+	public void Remplir() {
+		this.contenu_ = capacite_;
+	}
 	
-	public void Vider() {}
+	public void Vider() {
+		this.contenu_ = 0;
+	}
 	
 	public void Contenu() {}
 	
