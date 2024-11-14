@@ -26,12 +26,31 @@ public class Carafe {
 		return this.contenu_;
 	}
 	
+	/** Accesseur en écriture
+	 * @param contenu à modifier */
+	private void Contenu(int contenu) {
+		this.contenu_ = contenu;
+	}
+	
 	/** Accesseur en lecture  
 	 * @return capacité de la carafe en litres */
 	public int Capacité() {
 		return this.capacite_;
 	}
 	
-	public void Transvaser() {}
+	/** transvaser la carafe c dans la carafe this
+	 * @param c carafe à transvaser */
+	public void Transvaser(Carafe c) {
+		
+		int reste = this.capacite_ - this.contenu_;
+		if (c.Contenu() < reste) { // on va pouvoir vider la carafe c
+			this.Contenu(Contenu() + c.Contenu());
+			c.Vider();
+		}
+		else {
+			c.Contenu(c.Contenu() - reste);
+			this.Remplir();
+	}
+}
 		
 }
