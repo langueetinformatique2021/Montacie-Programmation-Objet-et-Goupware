@@ -1,9 +1,13 @@
 package atelier05;
 
 public class Carafe {
+	private int  contenu_, capacite_;
 	
-	public Carafe() {
-		
+	/** Création d'une carafe vide
+	 * @param capacite capacité en litres de la carafe */
+	public Carafe(int capacite) {
+		this.capacite_ = capacite;
+		this.contenu_ = 0;
 	}
 	
 	public void Remplir() {}
