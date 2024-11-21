@@ -1,56 +1,41 @@
-package atelier05;
+package TD05;
 
 public class Carafe {
-	private int  contenu_, capacite_;
-	
-	/** Création d'une carafe vide
-	 * @param capacite capacité en litres de la carafe */
-	public Carafe(int capacite) {
-		this.capacite_ = capacite;
-		Vider();
-	}
-	
-	/** Remplir une carafe complétement */
-	public void Remplir() {
-		this.contenu_ = capacite_;
-	}
-	
-	/** Vider une carafe complétement */
-	public void Vider() {
+	//Atributs privés de la class
+	private int contenu_;
+	private int capacité_;
+	/**
+	 * Constructeur
+	 * @param Carafe initialment vide
+	 */
+	public Carafe(int capacité) {
+		this.capacité_ = capacité;
 		this.contenu_ = 0;
 	}
-	
-	/** Accesseur en lecture  
-	 * @return contenu de la carafe en litres */
+	//@return le contenu
 	public int Contenu() {
 		return this.contenu_;
 	}
-	
-	/** Accesseur en écriture
-	 * @param contenu à modifier */
-	private void Contenu(int contenu) {
-		this.contenu_ = contenu;
-	}
-	
-	/** Accesseur en lecture  
-	 * @return capacité de la carafe en litres */
+	//@return la capacité
 	public int Capacité() {
-		return this.capacite_;
+		return this.capacité_;
 	}
-	
-	/** transvaser la carafe c dans la carafe this
-	 * @param c carafe à transvaser */
-	public void Transvaser(Carafe c) {
-		
-		int reste = this.capacite_ - this.contenu_;
-		if (c.Contenu() < reste) { // on va pouvoir vider la carafe c
-			this.Contenu(Contenu() + c.Contenu());
-			c.Vider();
-		}
-		else {
-			c.Contenu(c.Contenu() - reste);
-			this.Remplir();
+	//Méthode pour remplir
+	public void Remplir() {
+		contenu_ = capacité_;
 	}
-}
+	//Méthode pour vider
+	public void Vider() {
+		contenu_ = 0;
+	}
+	/**
+	 * 
+	 * @param autreCarafe la carafe qui recoit l'action de transverser
+	 */
+	public void Transvaser(Carafe autreCarafe) {
+		int Transversable = Math.min(this.contenu_, autreCarafe.capacité_ - autreCarafe.contenu_);
+		this.contenu_ -= Transversable;
+		autreCarafe.contenu_ += Transversable;
+	}
 		
 }
