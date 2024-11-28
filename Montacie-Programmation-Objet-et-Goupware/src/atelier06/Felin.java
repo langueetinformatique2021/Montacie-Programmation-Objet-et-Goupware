@@ -22,6 +22,7 @@ public class Felin extends Animal {
 
 	/** cri du félin */
 	public void crie() {
+		System.out.println("Je suis un félin et je rugis");
 
 	}
 
