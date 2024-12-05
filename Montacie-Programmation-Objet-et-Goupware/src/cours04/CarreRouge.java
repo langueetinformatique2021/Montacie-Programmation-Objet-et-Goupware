@@ -20,7 +20,7 @@ protected float cote = 0;
 	   */
 		public float perimetre() { return 4*cote; }
     
-		/** calcul de la surface d'un carr� rouge
+		/** calcul de la surface d'un carré rouge
 		 * @return surface
 		 */
 		public float surface() { return cote*cote; }
