@@ -1,6 +1,8 @@
 package atelier09;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -21,12 +23,27 @@ public class MonPremierFichierTexte2 {
 			e.printStackTrace();
 		}
 
-		System.out.println(Verifier());
+		Verifier();
 
 	}
 
-	public static boolean Verifier() {
-		return false;
-	}
+	public static void Verifier() {
 
+		String ligne;
+		int numLigne = 0;
+		try {
+			FileReader fr = new FileReader(f);
+			BufferedReader br = new BufferedReader(fr);
+			while ((ligne = br.readLine()) != null) {
+				if ((Integer.parseInt(ligne)!=num[numLigne++]))
+					break;
+			}
+			br.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		if (numLigne == num.length)
+			System.out.println("contenu vérifié");
+	}
 }
