@@ -1,4 +1,4 @@
-package TD05;
+package atelier05;
 
 public class Carafe {
 	//Atributs privés de la class
