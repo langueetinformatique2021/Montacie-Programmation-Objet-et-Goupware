@@ -2,7 +2,7 @@ package atelier04;
 
 public class Condition1 {
 	public static void main(String[] args) {
-	int p1 = -1, p2 = 9, p3 = 8, p4 = 4, p5 = 8;
+	int p1 = 2, p2 = 1, p3 = 3, p4 = 4, p5 = 8;
 	int max;
 	
 	if (p1 > p2) {
