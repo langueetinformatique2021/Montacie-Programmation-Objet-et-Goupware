@@ -5,7 +5,7 @@ import java.lang.Comparable;
 
 public class Cercle extends FigureGeometrique implements Comparable  {
 	
-	double rayon;
+	private double rayon;
 	
 	/** Création d'une nouvelle instance de Cercle */
 	public Cercle(float x) {
