@@ -23,6 +23,6 @@ public abstract class Metal {
 		System.out.println("je suis un métal fait à partir de l'alliage de " + alliage + " fondant à une température de " + tempFusion + " d'une dureté de " + mesureVickers + " selon l'échelle de Vickers"); 
 	}
 	
-	/** instruments fait à partir du métal */
+	/** instruments faits à partir du métal */
 	public abstract String instruments();
 }
