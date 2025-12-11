@@ -19,8 +19,8 @@ public class testGregorianCalendar {
 		  // begin output
 		 System.out.println("Current Time");
 		
-		 // create a Pacific Standard Time time zone
-		 SimpleTimeZone pdt = new SimpleTimeZone(-8 * 60 * 60 * 1000, ids[0]);
+		 // create a Paris Standard Time time zone
+		 SimpleTimeZone pdt = new SimpleTimeZone(0, ids[0]);
 		
 		 // set up rules for Daylight Saving Time
 		 pdt.setStartRule(Calendar.APRIL, 1, Calendar.SUNDAY, 2 * 60 * 60 * 1000);
